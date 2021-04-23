@@ -5,6 +5,9 @@ To build the source, run "./build.py".  You will need the following installed:
    * g++
    * libxml2 (ubuntu: apt-get install libxml2-dev; osx: pip install lxml)
    * libtre (ubuntu: apt-get install libtre-dev; osx: brew install tre)
+   
+   Note:  If build fails with a warning that "aclocal-1.15" is missing, run the following command in the openfst-1.7.0 folder:
+   touch --date="`date`" aclocal.m4 Makefile.am configure Makefile.in
 
 To do anything useful, you will need to build an index from Wikipedia.
 
